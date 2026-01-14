@@ -25,20 +25,32 @@ Version Control: Git / GitHub
 
 시스템 아키텍처
 [ Client ]
+
     ↓
 TCP(JSON)
+
     ↓
 EchoServer (QTcpServer)
+
     ↓
+    
 main.cpp (Routing)
+
     ↓
+    
 TableManager (Business Logic)
+
     ↓
+    
 QML UI (TablePage / TableDetailPage)
 
+
 [ Database ]
+
     ↑
+    
 Qt SQL (Connection & Initialization)
+
 
 구조 설명
 * EchoServer (Network Layer)
