@@ -28,6 +28,7 @@ DB 연동 구조 및 초기화 로직 구현
 UI–비즈니스 로직 분리 설계
 
 시스템 아키텍처 
+
 [Client] 
    ↓ 
 TCP(JSON) EchoServer (QTcpServer) 
@@ -42,7 +43,9 @@ QML UI (TablePage / TableDetailPage)
     ↑
 Qt SQL (Connection & Initialization)
 
+
 기술 스택 
+
 Language & Framework
 
 C++
@@ -81,7 +84,6 @@ Page / Item 구조
 
 Model–View 분리
 
- 핵심 구현 내용 
 1️. TCP 기반 실시간 주문 처리
 
 외부 클라이언트와 TCP 연결
@@ -116,7 +118,9 @@ Q_PROPERTY를 활용한 실시간 UI 갱신
 
 애플리케이션 실행 후 서버를 활성화합니다.
 
-주문 테스트 (PowerShell) $client = New-Object System.Net.Sockets.TcpClient("127.0.0.1", 8080) $stream = $client.GetStream()
+주문 테스트 
+
+(PowerShell) $client = New-Object System.Net.Sockets.TcpClient("127.0.0.1", 8080) $stream = $client.GetStream()
 
 $msg = '{"type":"order","tableId":1,"menu":"아메리카노","quantity":2,"price":8000}' $bytes = [System.Text.Encoding]::UTF8.GetBytes($msg)
 
