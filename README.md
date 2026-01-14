@@ -53,7 +53,8 @@ Qt SQL (Connection & Initialization)
 
 
 구조 설명
-* EchoServer (Network Layer)
+
+* EchoServer (Network Layer) *
 
 QTcpServer 기반 TCP 서버 구현
 
