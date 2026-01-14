@@ -30,18 +30,30 @@ UI–비즈니스 로직 분리 설계
 시스템 아키텍처 
 
 [Client] 
+
    ↓ 
+   
 TCP(JSON) EchoServer (QTcpServer) 
+
    ↓ 
+   
 main.cpp (Routing) 
+
    ↓ 
+   
 TableManager (Business Logic) 
+
    ↓ 
+   
 QML UI (TablePage / TableDetailPage)
 
+
 [Database] 
+
     ↑
+    
 Qt SQL (Connection & Initialization)
+
 
 
 기술 스택 
